@@ -27,6 +27,6 @@ export const newsmailer = async (data) => {
       }
     });
   } catch (error) {
-  conole.log(error)
+  console.log(error)
   }
 };
