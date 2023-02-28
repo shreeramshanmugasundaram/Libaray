@@ -19,7 +19,6 @@ export const email = async (req, res) => {
     const result = await emailSchema.create({
       email,
     });
-    await mailer({ email, type: "email", subject: "New Subscriber" });
 
     const html =
       "<html><center><h1>Welcome to EWS Library Newsletter</h1></center> <p style = 'text-align:center; color:#333;'>Get weekly new letter</p></html>";
