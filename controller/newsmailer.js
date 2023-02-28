@@ -26,5 +26,7 @@ export const newsmailer = async (data) => {
         console.log(`Email sent: ${info.response}`);
       }
     });
-  } catch (error) {}
+  } catch (error) {
+  conole.log(error)
+  }
 };
