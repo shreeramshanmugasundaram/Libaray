@@ -9,6 +9,7 @@ export const mailer = async (data) => {
     }
     const transporter = nodemailer.createTransport({
       service: "gmail",
+      secure:true,
       auth: {
         user: "thefoodiebeecontact@gmail.com",
         pass: process.env.PASSWORD,
